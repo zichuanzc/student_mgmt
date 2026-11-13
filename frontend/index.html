@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学生管理系统</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="side">
+      <div class="logo">
+        <strong>学生管理系统</strong>
+        <span>教学 · 就业 · 统计</span>
+      </div>
+      <nav class="menu" id="mainMenu">
+        <button type="button" data-page="dashboard" class="active">首页概览</button>
+        <button type="button" data-page="students">学生信息</button>
+        <button type="button" data-page="classes">班级管理</button>
+        <button type="button" data-page="teachers">教师管理</button>
+        <button type="button" data-page="employment">就业信息</button>
+        <button type="button" data-page="scores">成绩管理</button>
+        <button type="button" data-page="users" id="navUsers" class="hidden">用户管理</button>
+        <button type="button" data-page="stats">统计报表</button>
+      </nav>
+      <div class="side-foot">
+        <p class="user-line">当前用户：<strong id="sideUserName">-</strong></p>
+        <p class="user-role">角色：<span id="sideUserRole">-</span></p>
+        <button type="button" class="btn ghost sm logout-btn" id="btnLogout">退出登录</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div>
+          <h1 id="pageTitle">首页概览</h1>
+          <p class="subtitle" id="pageSubtitle">查看整体数据与快捷入口</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="btn ghost" id="btnRefresh">刷新</button>
+          <button type="button" class="btn ghost" id="btnSettings">系统设置</button>
+        </div>
+      </header>
+
+      <section class="page active" id="page-dashboard"></section>
+      <section class="page" id="page-students"></section>
+      <section class="page" id="page-classes"></section>
+      <section class="page" id="page-teachers"></section>
+      <section class="page" id="page-employment"></section>
+      <section class="page" id="page-scores"></section>
+      <section class="page" id="page-users"></section>
+      <section class="page" id="page-stats"></section>
+    </main>
+  </div>
+
+  <div id="modalRoot" class="modal-root"></div>
+  <div id="toast"></div>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

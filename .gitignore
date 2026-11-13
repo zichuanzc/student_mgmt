@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 虚拟环境（虽然 venv 在项目外，写上更保险）
+.venv/
+venv/
+
+# 环境变量与密钥
+.env
+.env.*
+
+# 数据库与日志
+*.db
+*.sqlite3
+*.log
+
+# IDE
+.idea/
+.vscode/
+
+# 其他
+项目总结.txt
+

@@ -1,0 +1,27 @@
+student_mgmt/
+©À©¤©¤ app/
+©¦   ©À©¤©¤ api/
+©¦   ©À©¤©¤ core/
+©¦   ©À©¤©¤ dao/
+©¦   ©À©¤©¤ lib/
+©¦   ©À©¤©¤ log/
+©¦   ©À©¤©¤ middlewares/
+©¦   ©À©¤©¤ models/
+©¦   ©À©¤©¤ schemas/
+©¦   ©À©¤©¤ __init__.py
+©¦   ©¸©¤©¤ main.py
+©À©¤©¤ frontend/
+©¦   ©À©¤©¤ css/
+©¦   ©À©¤©¤ js/
+©¦   ©À©¤©¤ index.html
+©¦   ©¸©¤©¤ login.html
+©À©¤©¤ tests/
+©¦   ©À©¤©¤ __init__.py
+©¦   ©À©¤©¤ insert_data.py
+©¦   ©À©¤©¤ seed_demo_data.py
+©¦   ©À©¤©¤ test_students.py
+©¦   ©À©¤©¤ tree.txt
+©¦   ©¸©¤©¤ tree3.py
+©À©¤©¤ README.md
+©À©¤©¤ requirements.txt
+©¸©¤©¤ STARTUP.md

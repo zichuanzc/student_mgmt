@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录 · 学生管理系统</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="login-page">
+  <div class="login-card">
+  <div class="login-brand">
+      <h1>学生管理系统</h1>
+      <p>教学管理 · 成绩就业 · 数据统计</p>
+    </div>
+    <form id="loginForm" class="login-form">
+      <label class="field">
+        <span>用户名</span>
+        <input name="username" type="text" autocomplete="username" placeholder="例如 admin001" minlength="3" maxlength="50" required />
+      </label>
+      <label class="field">
+        <span>密码</span>
+        <input name="password" type="password" autocomplete="current-password" placeholder="请输入密码" minlength="6" maxlength="20" required />
+      </label>
+      <button type="submit" class="btn primary login-btn">登录</button>
+    </form>
+    <p class="login-hint">演示管理员：admin001 / 123456（用户管理需管理员角色）</p>
+  </div>
+  <script src="./js/api.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>
