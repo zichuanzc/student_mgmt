@@ -22,5 +22,6 @@ venv/
 .vscode/
 
 # 其他
+local/
 项目总结.txt
 

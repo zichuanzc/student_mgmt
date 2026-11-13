@@ -11,7 +11,7 @@ from app.lib.tools import utcnow
 class Class(Base):
     __tablename__ = "class_"
     id = Column(Integer, primary_key=True, index=True)
-    class_code = Column(Integer, nullable=False, comment="班级编号")
+    class_code = Column(Integer, unique=True, nullable=False, comment="班级编号")
     start_time = Column(DATE, nullable=False, comment="开班时间")
     end_time = Column(DATE, nullable=True, default=None, comment="毕业时间")
     teacher_id = Column(Integer, ForeignKey("teacher.id"), comment="班主任")
