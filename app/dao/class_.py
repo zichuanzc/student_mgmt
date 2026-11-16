@@ -54,3 +54,10 @@ def get_class_by_code_db(db: Session, class_code: int):
         Class.class_code == class_code,
         Class.is_deleted == 0
     ).first()
+
+# ================= 7. 根据班级编号（class_code）查询班级 =================
+def get_class_by_code_db(db: Session, class_code: int):
+    return db.query(Class).filter(
+        Class.class_code == class_code,
+        Class.is_deleted == 0
+    ).first()
